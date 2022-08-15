@@ -1,0 +1,188 @@
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .home-page {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/freedom-4782870.jpg");
+    }
+    
+    .menu-bar {
+        padding: 30px;
+        display: flex;
+        height: 20%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu-options ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .menu-options ul li {
+        margin: 30px;
+        color: white;
+    }
+    
+    .section {
+        height: 80%;
+        display: flex;
+        /* horizontally center  */
+        justify-content: center;
+        /* vertically center   */
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .content h1,
+    h5 {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .content h5 {
+        font-size: 15px;
+        padding: 20px;
+    }
+    
+    .dot {
+        font-size: 70px;
+        padding: 5px;
+        color: #f1d204;
+    }
+    
+    .content a {
+        text-decoration: none;
+        padding: 20px;
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        border: solid 2px white;
+        background-color: #f1d204;
+        margin: 10px;
+        transition: .5s;
+    }
+    
+    .content a:hover {
+        background: transparent;
+        transition: .5s;
+    }
+    
+    .mobile-menu-options {
+        display: none;
+    }
+    
+    .buttons {
+        display: none;
+    }
+    
+    .menu-parent {
+        display: none;
+    }
+    
+    @media screen and (min-width: 425px) and (max-width: 778px) {
+        .home-page {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+        .menu-bar {
+            width: 100%;
+            justify-content: normal;
+            padding: 0;
+        }
+        .menu-options ul li {
+            margin: 0;
+            padding: 15px;
+        }
+        .logo {
+            padding: 10px;
+        }
+        .section {
+            width: 80%;
+        }
+        .content h1 {
+            font-size: 74px;
+        }
+        .content h5 {
+            font-size: 28px;
+        }
+        .mobile-menu-options {
+            display: none;
+        }
+        .buttons {
+            display: none;
+        }
+        .menu-parent {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .menu-options ul {
+            display: none;
+        }
+        .menu-button i,
+        .close-button i {
+            font-size: 40px;
+            color: white;
+            padding: 25px;
+        }
+        .buttons {
+            position: relative;
+            bottom: 60px;
+            display: block;
+        }
+        .menu-button,
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+        .menu-bar {
+            justify-content: space-between;
+        }
+        .mobile-menu-options {
+            width: 100%;
+        }
+        .mobile-menu-options ul {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            text-align: center;
+        }
+        .mobile-menu-options ul li {
+            padding: 10px;
+            border-bottom: solid 1px black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .section {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/freedom-4782870.jpg");
+            width: 100%;
+            background-position: center;
+        }
+        .close-button {
+            display: none;
+        }
+        .menu-parent {
+            display: block;
+        }
+    }
